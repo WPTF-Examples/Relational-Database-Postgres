@@ -36,7 +36,7 @@ app.post("/updateName", (req, res) => {
         Name.destroy({
             where: { id: req.body.id }
         }).then(() => {
-            console.log("successfully removed user: " + req.body.id);
+            console.log("successfully removed name: " + req.body.id);
             res.redirect("/"); 
         });
     } else {
